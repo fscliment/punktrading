@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>PUNKTRADING</h2>
+<p>
+Diario y Status de proyectos de F Sánchez Climent
+</p>
+<ul>
+    <li><a href="/admin/">Log in to the admin interface</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}
